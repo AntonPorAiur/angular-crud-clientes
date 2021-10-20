@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
 })
 export class DirectivaComponent {
   listaCurso: String[] = ['Typescript','JavaScript','Java SE','PHP','C#'];
+
+  habilitar: boolean = true;
+  btnMostrarTxt: String = 'Ocultar';
+
+  setHabilitar(): void {
+    this.habilitar = (!this.habilitar)
+    this.btnMostrarTxt = this.habilitar == true ? 'Ocultar' : 'Mostrar'; 
+  }
 }

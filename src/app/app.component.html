@@ -1,17 +1,8 @@
 <app-header></app-header>
 
-<div class="container">
-  <h1>
-    {{ title }}
-  </h1>
-  <ul>
-    <li> {{curso}} </li>
-    <li>Profesor: {{profesor}} </li>
-  </ul>
-
-  <app-directiva></app-directiva>
-
+<div class="container my-3 wrap">
+  <router-outlet></router-outlet>
+  <!-- <app-directiva></app-directiva> -->
 </div>
-
 
 <app-footer></app-footer>
